@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জ্ঞান ভাগাভাগি - প্রশ্ন ও উত্তর প্ল্যাটফর্ম</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <div class="logo">
+                        <i class="fas fa-question-circle"></i>
+                        <span>জ্ঞান ভাগাভাগি</span>
+                    </div>
+                    <p class="tagline">প্রশ্ন করুন, উত্তর পান</p>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="আপনার প্রশ্ন খুঁজুন..." id="searchInput">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#categories">বিভাগ</a></li>
+                    <li><a href="#trending">ট্রেন্ডিং</a></li>
+                    <li><a href="#experts">বিশেষজ্ঞ</a></li>
+                    <li><a href="#about">সম্পর্কে</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="ask-question-btn">
+                        <i class="fas fa-plus"></i>
+                        প্রশ্ন করুন
+                    </button>
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <a href="#"><i class="fas fa-user-circle"></i> প্রোফাইল</a>
+                            <a href="#"><i class="fas fa-question"></i> আমার প্রশ্ন</a>
+                            <a href="#"><i class="fas fa-reply"></i> আমার উত্তর</a>
+                            <a href="#"><i class="fas fa-bookmark"></i> সেভ করা</a>
+                            <a href="#"><i class="fas fa-cog"></i> সেটিংস</a>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i> লগআউট</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>আপনার প্রশ্নের উত্তর খুঁজুন</h1>
+                <p>লাখো মানুষের সাথে জ্ঞান ভাগাভাগি করুন। প্রশ্ন করুন, উত্তর দিন এবং শিখুন।</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="কী জানতে চান? প্রশ্ন করুন..." id="heroSearch">
+                    <button class="hero-search-btn">খুঁজুন</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50000">০</span>
+                        <span class="stat-label">প্রশ্ন</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="150000">০</span>
+                        <span class="stat-label">উত্তর</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="25000">০</span>
+                        <span class="stat-label">ব্যবহারকারী</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>জনপ্রিয় বিভাগসমূহ</h2>
+                <p>আপনার আগ্রহের বিষয় খুঁজুন</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>প্রযুক্তি</h3>
+                    <p>কম্পিউটার, সফটওয়্যার, প্রোগ্রামিং</p>
+                    <div class="category-stats">
+                        <span>৮,৫০০ প্রশ্ন</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>শিক্ষা</h3>
+                    <p>পড়াশোনা, পরীক্ষা, ক্যারিয়ার</p>
+                    <div class="category-stats">
+                        <span>১২,৩০০ প্রশ্ন</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>স্বাস্থ্য</h3>
+                    <p>চিকিৎসা, পুষ্টি, ফিটনেস</p>
+                    <div class="category-stats">
+                        <span>৬,৭০০ প্রশ্ন</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>ব্যবসা</h3>
+                    <p>উদ্যোক্তা, বিনিয়োগ, মার্কেটিং</p>
+                    <div class="category-stats">
+                        <span>৪,২০০ প্রশ্ন</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>শিল্প ও সংস্কৃতি</h3>
+                    <p>সাহিত্য, সঙ্গীত, চলচ্চিত্র</p>
+                    <div class="category-stats">
+                        <span>৩,৮০০ প্রশ্ন</span>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>সাধারণ জ্ঞান</h3>
+                    <p>ইতিহাস, ভূগোল, বিজ্ঞান</p>
+                    <div class="category-stats">
+                        <span>৯,১০০ প্রশ্ন</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Questions -->
+    <section id="trending" class="trending">
+        <div class="container">
+            <div class="section-header">
+                <h2>ট্রেন্ডিং প্রশ্নসমূহ</h2>
+                <p>এই মুহূর্তে জনপ্রিয় প্রশ্নগুলো</p>
+            </div>
+            <div class="questions-list">
+                <div class="question-card">
+                    <div class="question-votes">
+                        <button class="vote-btn upvote"><i class="fas fa-chevron-up"></i></button>
+                        <span class="vote-count">২৪৫</span>
+                        <button class="vote-btn downvote"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="question-content">
+                        <h3>পাইথন প্রোগ্রামিং শেখার সবচেয়ে ভালো উপায় কী?</h3>
+                        <p>আমি একজন নতুন প্রোগ্রামার। পাইথন শিখতে চাই কিন্তু কোথা থেকে শুরু করব বুঝতে পারছি না। কেউ গাইড করতে পারবেন?</p>
+                        <div class="question-meta">
+                            <div class="question-tags">
+                                <span class="tag">প্রোগ্রামিং</span>
+                                <span class="tag">পাইথন</span>
+                                <span class="tag">শিক্ষা</span>
+                            </div>
+                            <div class="question-info">
+                                <span class="author">রহিম উদ্দিন</span>
+                                <span class="time">২ ঘন্টা আগে</span>
+                                <span class="answers">১২ উত্তর</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button class="action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                        <button class="action-btn"><i class="fas fa-flag"></i></button>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-votes">
+                        <button class="vote-btn upvote"><i class="fas fa-chevron-up"></i></button>
+                        <span class="vote-count">১৮৯</span>
+                        <button class="vote-btn downvote"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="question-content">
+                        <h3>ফ্রিল্যান্সিং শুরু করার জন্য কী কী দক্ষতা প্রয়োজন?</h3>
+                        <p>আমি ফ্রিল্যান্সিং করতে চাই। কিন্তু কোন স্কিল শিখলে ভালো হবে এবং কোথায় কাজ খুঁজব?</p>
+                        <div class="question-meta">
+                            <div class="question-tags">
+                                <span class="tag">ফ্রিল্যান্সিং</span>
+                                <span class="tag">ক্যারিয়ার</span>
+                                <span class="tag">দক্ষতা</span>
+                            </div>
+                            <div class="question-info">
+                                <span class="author">সালমা খাতুন</span>
+                                <span class="time">৪ ঘন্টা আগে</span>
+                                <span class="answers">৮ উত্তর</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button class="action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                        <button class="action-btn"><i class="fas fa-flag"></i></button>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <div class="question-votes">
+                        <button class="vote-btn upvote"><i class="fas fa-chevron-up"></i></button>
+                        <span class="vote-count">১৫৬</span>
+                        <button class="vote-btn downvote"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="question-content">
+                        <h3>ডায়াবেটিস নিয়ন্ত্রণে রাখার প্রাকৃতিক উপায় কী?</h3>
+                        <p>আমার বাবার ডায়াবেটিস আছে। ওষুধের পাশাপাশি প্রাকৃতিক উপায়ে নিয়ন্ত্রণ করার কোনো পদ্ধতি আছে কি?</p>
+                        <div class="question-meta">
+                            <div class="question-tags">
+                                <span class="tag">স্বাস্থ্য</span>
+                                <span class="tag">ডায়াবেটিস</span>
+                                <span class="tag">প্রাকৃতিক চিকিৎসা</span>
+                            </div>
+                            <div class="question-info">
+                                <span class="author">করিম আহমেদ</span>
+                                <span class="time">৬ ঘন্টা আগে</span>
+                                <span class="answers">১৫ উত্তর</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button class="action-btn"><i class="fas fa-bookmark"></i></button>
+                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                        <button class="action-btn"><i class="fas fa-flag"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more">
+                <button class="load-more-btn">আরও প্রশ্ন দেখুন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experts Section -->
+    <section id="experts" class="experts">
+        <div class="container">
+            <div class="section-header">
+                <h2>বিশেষজ্ঞ উত্তরদাতা</h2>
+                <p>আমাদের সম্প্রদায়ের সেরা অবদানকারীরা</p>
+            </div>
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/100x100/4f46e5/ffffff?text=DR" alt="ডাক্তার রহমান">
+                        <div class="expert-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>ডাক্তার আব্দুর রহমান</h3>
+                        <p class="expert-title">চিকিৎসক ও স্বাস্থ্য বিশেষজ্ঞ</p>
+                        <div class="expert-stats">
+                            <span><i class="fas fa-reply"></i> ৮৫০ উত্তর</span>
+                            <span><i class="fas fa-thumbs-up"></i> ৯৫% সন্তুষ্টি</span>
+                        </div>
+                        <div class="expert-specialties">
+                            <span class="specialty">স্বাস্থ্য</span>
+                            <span class="specialty">চিকিৎসা</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/100x100/059669/ffffff?text=ENG" alt="ইঞ্জিনিয়ার করিম">
+                        <div class="expert-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>ইঞ্জিনিয়ার করিম উদ্দিন</h3>
+                        <p class="expert-title">সফটওয়্যার ইঞ্জিনিয়ার</p>
+                        <div class="expert-stats">
+                            <span><i class="fas fa-reply"></i> ১,২০০ উত্তর</span>
+                            <span><i class="fas fa-thumbs-up"></i> ৯৮% সন্তুষ্টি</span>
+                        </div>
+                        <div class="expert-specialties">
+                            <span class="specialty">প্রোগ্রামিং</span>
+                            <span class="specialty">প্রযুক্তি</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert-card">
+                    <div class="expert-avatar">
+                        <img src="https://via.placeholder.com/100x100/dc2626/ffffff?text=PROF" alt="প্রফেসর খান">
+                        <div class="expert-badge">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>প্রফেসর নাসির খান</h3>
+                        <p class="expert-title">শিক্ষাবিদ ও গবেষক</p>
+                        <div class="expert-stats">
+                            <span><i class="fas fa-reply"></i> ৬৫০ উত্তর</span>
+                            <span><i class="fas fa-thumbs-up"></i> ৯৬% সন্তুষ্টি</span>
+                        </div>
+                        <div class="expert-specialties">
+                            <span class="specialty">শিক্ষা</span>
+                            <span class="specialty">গবেষণা</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ask Question Modal -->
+    <div class="modal" id="askQuestionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>নতুন প্রশ্ন করুন</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form class="question-form" id="questionForm">
+                <div class="form-group">
+                    <label>প্রশ্নের শিরোনাম</label>
+                    <input type="text" placeholder="আপনার প্রশ্নটি সংক্ষেপে লিখুন" required>
+                </div>
+                <div class="form-group">
+                    <label>বিস্তারিত বিবরণ</label>
+                    <textarea placeholder="আপনার প্রশ্নের বিস্তারিত লিখুন" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>বিভাগ নির্বাচন করুন</label>
+                    <select required>
+                        <option value="">বিভাগ নির্বাচন করুন</option>
+                        <option value="technology">প্রযুক্তি</option>
+                        <option value="education">শিক্ষা</option>
+                        <option value="health">স্বাস্থ্য</option>
+                        <option value="business">ব্যবসা</option>
+                        <option value="culture">শিল্প ও সংস্কৃতি</option>
+                        <option value="general">সাধারণ জ্ঞান</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ট্যাগ যোগ করুন</label>
+                    <input type="text" placeholder="ট্যাগ যোগ করুন (কমা দিয়ে আলাদা করুন)">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">বাতিল</button>
+                    <button type="submit" class="submit-btn">প্রশ্ন পোস্ট করুন</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>জ্ঞান ভাগাভাগি</h3>
+                    <p>আমাদের লক্ষ্য হলো একটি জ্ঞান-ভিত্তিক সম্প্রদায় গড়ে তোলা যেখানে সবাই শিখতে ও শেখাতে পারে।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>বিভাগসমূহ</h4>
+                    <ul>
+                        <li><a href="#">প্রযুক্তি</a></li>
+                        <li><a href="#">শিক্ষা</a></li>
+                        <li><a href="#">স্বাস্থ্য</a></li>
+                        <li><a href="#">ব্যবসা</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>সহায়তা</h4>
+                    <ul>
+                        <li><a href="#">কীভাবে প্রশ্ন করবেন</a></li>
+                        <li><a href="#">কীভাবে উত্তর দেবেন</a></li>
+                        <li><a href="#">নিয়মাবলী</a></li>
+                        <li><a href="#">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>নিউজলেটার</h4>
+                    <p>নতুন প্রশ্ন ও উত্তরের আপডেট পেতে সাবস্ক্রাইব করুন</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="আপনার ইমেইল">
+                        <button>সাবস্ক্রাইব</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; ২০২৫ জ্ঞান ভাগাভাগি। সকল অধিকার সংরক্ষিত।</p>
+                <div class="footer-links">
+                    <a href="#">গোপনীয়তা নীতি</a>
+                    <a href="#">ব্যবহারের শর্তাবলী</a>
+                    <a href="#">কুকি নীতি</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

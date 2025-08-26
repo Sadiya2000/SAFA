@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কুরআন ও হাদীসের আলো - Quran O Hadiser Alo</title>
+    <script type="module" crossorigin src="/assets/index-CU1_COmU.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D2SIQLy0.css">
+    <style>
+      .features-button {
+        background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        color: #065f46;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .features-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(251, 191, 36, 0.4);
+      }
+      
+      .features-section {
+        text-align: center;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      
+      .features-section h3 {
+        color: #fbbf24;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .features-section p {
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Features Section Overlay -->
+    <script>
+      // Wait for the React app to load, then add the features section
+      setTimeout(() => {
+        const mainContent = document.querySelector('[class*="container"]') || document.querySelector('main') || document.body;
+        
+        if (mainContent && !document.querySelector('.features-section')) {
+          const featuresSection = document.createElement('div');
+          featuresSection.className = 'features-section';
+          featuresSection.innerHTML = `
+            <h3>🌟 সম্পূর্ণ ফিচার দেখুন</h3>
+            <p>আমাদের প্ল্যাটফর্মের সকল বৈশিষ্ট্য এবং সুবিধা সম্পর্কে বিস্তারিত জানুন। কুরআন, হাদীস, নামাজের সময়, দোয়া এবং আরও অনেক কিছু।</p>
+            <a href="/features.html" class="features-button">
+              📋 বিস্তারিত ফিচার দেখুন
+            </a>
+          `;
+          
+          // Try to insert after the main hero section
+          const heroSection = document.querySelector('[class*="hero"]') || 
+                             document.querySelector('[class*="main"]') || 
+                             mainContent.firstElementChild;
+          
+          if (heroSection && heroSection.nextSibling) {
+            mainContent.insertBefore(featuresSection, heroSection.nextSibling);
+          } else {
+            mainContent.appendChild(featuresSection);
+          }
+        }
+      }, 2000);
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBD - বাংলাদেশের প্রযুক্তি সংবাদ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="../tech_logo.png" alt="TechBD Logo" style="height: 40px; margin-right: 10px;">
+                    <div>
+                        <h2>TechBD</h2>
+                        <span class="tagline">প্রযুক্তির খবর</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#news">সংবাদ</a></li>
+                    <li><a href="#reviews">রিভিউ</a></li>
+                    <li><a href="#tutorials">টিউটোরিয়াল</a></li>
+                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>বাংলাদেশের সর্ববৃহৎ প্রযুক্তি প্ল্যাটফর্ম</h1>
+                <p>সর্বশেষ প্রযুক্তির খবর, রিভিউ, টিউটোরিয়াল এবং আরও অনেক কিছু পান আমাদের সাথে</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">সর্বশেষ খবর</button>
+                    <button class="btn btn-secondary">টিউটোরিয়াল দেখুন</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-animation">
+                    <div class="floating-icon"><i class="fab fa-android"></i></div>
+                    <div class="floating-icon"><i class="fab fa-apple"></i></div>
+                    <div class="floating-icon"><i class="fab fa-windows"></i></div>
+                    <div class="floating-icon"><i class="fab fa-linux"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section id="news" class="featured-news">
+        <div class="container">
+            <div class="section-header">
+                <h2>বিশেষ সংবাদ</h2>
+                <p>আজকের গুরুত্বপূর্ণ প্রযুক্তি সংবাদ</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/600x300/667eea/ffffff?text=AI+Technology" alt="AI News">
+                        <div class="news-category">কৃত্রিম বুদ্ধিমত্তা</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>বাংলাদেশে কৃত্রিম বুদ্ধিমত্তার নতুন যুগ</h3>
+                        <p>স্থানীয় প্রযুক্তি কোম্পানিগুলো AI এর ক্ষেত্রে অভূতপূর্ব অগ্রগতি করছে। এই প্রতিবেদনে জানুন কিভাবে AI আমাদের দৈনন্দিন জীবনকে পরিবর্তন করছে।</p>
+                        <div class="news-meta">
+                            <span class="author">লেখক: রহিম উদ্দিন</span>
+                            <span class="date">২৫ আগস্ট, ২০২৫</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/764ba2/ffffff?text=Mobile+Tech" alt="Mobile News">
+                        <div class="news-category">মোবাইল</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>নতুন স্মার্টফোনের বাজারে ঝড়</h3>
+                        <p>এই বছরের সেরা স্মার্টফোনগুলোর তুলনামূলক বিশ্লেষণ।</p>
+                        <div class="news-meta">
+                            <span class="date">২৪ আগস্ট, ২০২৫</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/f093fb/ffffff?text=Web+Development" alt="Web Dev News">
+                        <div class="news-category">ওয়েব ডেভেলপমেন্ট</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>ওয়েব ডেভেলপমেন্টের ভবিষ্যৎ</h3>
+                        <p>নতুন ফ্রেমওয়ার্ক এবং টুলস যা পরিবর্তন করবে ওয়েব ডেভেলপমেন্ট।</p>
+                        <div class="news-meta">
+                            <span class="date">২৩ আগস্ট, ২০২৫</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>প্রোডাক্ট রিভিউ</h2>
+                <p>বিশেষজ্ঞদের মতামত</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/4f46e5/ffffff?text=Laptop" alt="Laptop Review">
+                    </div>
+                    <div class="review-content">
+                        <h3>MacBook Pro M3 রিভিউ</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>৪.৫/৫</span>
+                        </div>
+                        <p>অসাধারণ পারফরমেন্স এবং ব্যাটারি লাইফ সহ এই ল্যাপটপটি প্রফেশনালদের জন্য আদর্শ।</p>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=Smartphone" alt="Phone Review">
+                    </div>
+                    <div class="review-content">
+                        <h3>Samsung Galaxy S24 Ultra</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>৫/৫</span>
+                        </div>
+                        <p>ক্যামেরা এবং ডিসপ্লের দিক থেকে এটি বর্তমান বাজারের সেরা ফোন।</p>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Headphones" alt="Headphones Review">
+                    </div>
+                    <div class="review-content">
+                        <h3>Sony WH-1000XM5</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>৪/৫</span>
+                        </div>
+                        <p>নয়েজ ক্যান্সেলেশন এবং সাউন্ড কোয়ালিটির জন্য দুর্দান্ত হেডফোন।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="tutorials">
+        <div class="container">
+            <div class="section-header">
+                <h2>টিউটোরিয়াল</h2>
+                <p>শিখুন নতুন প্রযুক্তি</p>
+            </div>
+            <div class="tutorials-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React.js শেখার সম্পূর্ণ গাইড</h3>
+                    <p>শূন্য থেকে React.js শিখুন এবং আধুনিক ওয়েব অ্যাপ্লিকেশন তৈরি করুন।</p>
+                    <div class="tutorial-meta">
+                        <span class="duration">৫ ঘন্টা</span>
+                        <span class="level">মধ্যম</span>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python দিয়ে AI প্রোগ্রামিং</h3>
+                    <p>Python ব্যবহার করে মেশিন লার্নিং এবং AI মডেল তৈরি করার পদ্ধতি।</p>
+                    <div class="tutorial-meta">
+                        <span class="duration">৮ ঘন্টা</span>
+                        <span class="level">উন্নত</span>
+                    </div>
+                </div>
+                
+                <div class="tutorial-card">
+                    <div class="tutorial-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Android অ্যাপ ডেভেলপমেন্ট</h3>
+                    <p>Kotlin ব্যবহার করে আধুনিক Android অ্যাপ্লিকেশন তৈরি করুন।</p>
+                    <div class="tutorial-meta">
+                        <span class="duration">৬ ঘন্টা</span>
+                        <span class="level">শুরুর দিকে</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>আমাদের নিউজলেটার সাবস্ক্রাইব করুন</h2>
+                <p>সর্বশেষ প্রযুক্তির খবর সরাসরি আপনার ইমেইলে পান</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
+                    <button type="submit" class="btn btn-primary">সাবস্ক্রাইব</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechBD</h3>
+                    <p>বাংলাদেশের সর্ববৃহৎ প্রযুক্তি সংবাদ প্ল্যাটফর্ম। আমরা সর্বদা সর্বশেষ প্রযুক্তির খবর এবং রিভিউ প্রদান করি।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>বিভাগসমূহ</h4>
+                    <ul>
+                        <li><a href="#">মোবাইল</a></li>
+                        <li><a href="#">ল্যাপটপ</a></li>
+                        <li><a href="#">গেমিং</a></li>
+                        <li><a href="#">সফটওয়্যার</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>সেবাসমূহ</h4>
+                    <ul>
+                        <li><a href="#">রিভিউ</a></li>
+                        <li><a href="#">টিউটোরিয়াল</a></li>
+                        <li><a href="#">গাইড</a></li>
+                        <li><a href="#">সাপোর্ট</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>যোগাযোগ</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@techbd.com</p>
+                        <p><i class="fas fa-phone"></i> +৮৮০ ১৭১২ ৩৪৫৬৭৮</p>
+                        <p><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৫ TechBD. সকল অধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

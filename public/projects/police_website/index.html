@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশ পুলিশ - জনগণের বন্ধু</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>জরুরি সেবার জন্য ডায়াল করুন: <strong>৯৯৯</strong></span>
+                <button class="close-banner">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-info">
+                    <span><i class="fas fa-phone"></i> জরুরি: ৯৯৯</span>
+                    <span><i class="fas fa-envelope"></i> info@police.gov.bd</span>
+                    <span><i class="fas fa-globe"></i> www.police.gov.bd</span>
+                </div>
+                <div class="top-links">
+                    <a href="#" class="lang-switch">English</a>
+                    <a href="#" class="report-crime">অপরাধ রিপোর্ট</a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="https://via.placeholder.com/80x80/1e3a8a/ffffff?text=Police" alt="বাংলাদেশ পুলিশ" class="police-logo">
+                    <div class="brand-text">
+                        <h1>বাংলাদেশ পুলিশ</h1>
+                        <p>জনগণের বন্ধু</p>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home">প্রধান পাতা</a></li>
+                    <li class="dropdown">
+                        <a href="#about">আমাদের সম্পর্কে <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ইতিহাস</a></li>
+                            <li><a href="#">সংগঠন</a></li>
+                            <li><a href="#">নেতৃত্ব</a></li>
+                            <li><a href="#">পুলিশ ইউনিট</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#services">সেবাসমূহ <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">অনলাইন সেবা</a></li>
+                            <li><a href="#">পুলিশ ক্লিয়ারেন্স</a></li>
+                            <li><a href="#">হারানো জিনিস</a></li>
+                            <li><a href="#">ট্রাফিক সেবা</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#wanted">ওয়ান্টেড</a></li>
+                    <li><a href="#news">সংবাদ</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="emergency-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        জরুরি
+                    </button>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <video autoplay muted loop class="hero-video">
+                <source src="https://via.placeholder.com/1920x1080/1e3a8a/ffffff?text=Police+Video" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>আমরা আছি আপনার পাশে</h1>
+                    <p>নিরাপত্তা, শান্তি ও ন্যায়বিচার নিশ্চিত করতে বাংলাদেশ পুলিশ সর্বদা প্রস্তুত</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">সেবা নিন</a>
+                        <a href="#report" class="btn btn-secondary">অভিযোগ দাখিল</a>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">২৪/৭</div>
+                        <div class="stat-label">সেবা</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">৯৯৯</div>
+                        <div class="stat-label">জরুরি নম্বর</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">১০০+</div>
+                        <div class="stat-label">থানা</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Services -->
+    <section class="quick-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>দ্রুত সেবা</h2>
+                <p>আপনার প্রয়োজনীয় সেবা এক ক্লিকে</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card emergency">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>জরুরি সেবা</h3>
+                    <p>তাৎক্ষণিক সাহায্যের জন্য</p>
+                    <a href="tel:999" class="service-btn">৯৯৯ ডায়াল করুন</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>অনলাইন FIR</h3>
+                    <p>ঘরে বসে মামলা দায়ের করুন</p>
+                    <a href="#" class="service-btn">আবেদন করুন</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>পুলিশ ক্লিয়ারেন্স</h3>
+                    <p>চারিত্রিক সনদপত্র</p>
+                    <a href="#" class="service-btn">আবেদন করুন</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>হারানো জিনিস</h3>
+                    <p>হারানো সম্পত্তি খুঁজুন</p>
+                    <a href="#" class="service-btn">খোঁজ করুন</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>ট্রাফিক সেবা</h3>
+                    <p>লাইসেন্স ও জরিমানা</p>
+                    <a href="#" class="service-btn">সেবা নিন</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>পাসপোর্ট যাচাই</h3>
+                    <p>পাসপোর্ট ভেরিফিকেশন</p>
+                    <a href="#" class="service-btn">যাচাই করুন</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wanted Section -->
+    <section id="wanted" class="wanted">
+        <div class="container">
+            <div class="section-header">
+                <h2>ওয়ান্টেড তালিকা</h2>
+                <p>এই ব্যক্তিদের সন্ধান পেলে নিকটস্থ থানায় যোগাযোগ করুন</p>
+            </div>
+            <div class="wanted-grid">
+                <div class="wanted-card">
+                    <div class="wanted-image">
+                        <img src="https://via.placeholder.com/200x250/dc2626/ffffff?text=WANTED" alt="Wanted Person">
+                        <div class="wanted-badge">ওয়ান্টেড</div>
+                    </div>
+                    <div class="wanted-info">
+                        <h3>নাম গোপন</h3>
+                        <p><strong>অপরাধ:</strong> চুরি ও ডাকাতি</p>
+                        <p><strong>পুরস্কার:</strong> ৫০,০০০ টাকা</p>
+                        <p><strong>শেষ দেখা:</strong> ঢাকা</p>
+                        <button class="report-btn">তথ্য দিন</button>
+                    </div>
+                </div>
+                
+                <div class="wanted-card">
+                    <div class="wanted-image">
+                        <img src="https://via.placeholder.com/200x250/dc2626/ffffff?text=WANTED" alt="Wanted Person">
+                        <div class="wanted-badge">ওয়ান্টেড</div>
+                    </div>
+                    <div class="wanted-info">
+                        <h3>নাম গোপন</h3>
+                        <p><strong>অপরাধ:</strong> জালিয়াতি</p>
+                        <p><strong>পুরস্কার:</strong> ৩০,০০০ টাকা</p>
+                        <p><strong>শেষ দেখা:</strong> চট্টগ্রাম</p>
+                        <button class="report-btn">তথ্য দিন</button>
+                    </div>
+                </div>
+                
+                <div class="wanted-card">
+                    <div class="wanted-image">
+                        <img src="https://via.placeholder.com/200x250/dc2626/ffffff?text=WANTED" alt="Wanted Person">
+                        <div class="wanted-badge">ওয়ান্টেড</div>
+                    </div>
+                    <div class="wanted-info">
+                        <h3>নাম গোপন</h3>
+                        <p><strong>অপরাধ:</strong> মাদক ব্যবসা</p>
+                        <p><strong>পুরস্কার:</strong> ১,০০,০০০ টাকা</p>
+                        <p><strong>শেষ দেখা:</strong> সিলেট</p>
+                        <button class="report-btn">তথ্য দিন</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>সংবাদ ও আপডেট</h2>
+                <a href="#" class="view-all">সব দেখুন</a>
+            </div>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/600x300/1e3a8a/ffffff?text=Police+News" alt="Police News">
+                        <div class="news-category">গুরুত্বপূর্ণ</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>সাইবার নিরাপত্তায় নতুন উদ্যোগ</h3>
+                        <p>বাংলাদেশ পুলিশ সাইবার অপরাধ প্রতিরোধে নতুন প্রযুক্তি ব্যবহার করছে। জনগণের ডিজিটাল নিরাপত্তা নিশ্চিত করতে বিশেষ ইউনিট গঠন করা হয়েছে।</p>
+                        <div class="news-meta">
+                            <span class="date">২৫ আগস্ট, ২০২৫</span>
+                            <span class="author">পুলিশ হেডকোয়ার্টার</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/059669/ffffff?text=Traffic+Update" alt="Traffic News">
+                        <div class="news-category">ট্রাফিক</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>ঢাকায় নতুন ট্রাফিক ব্যবস্থা</h3>
+                        <p>যানজট কমাতে স্মার্ট ট্রাফিক সিস্টেম চালু।</p>
+                        <div class="news-meta">
+                            <span class="date">২৪ আগস্ট, ২০২৫</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x200/dc2626/ffffff?text=Crime+Alert" alt="Crime Alert">
+                        <div class="news-category">সতর্কতা</div>
+                    </div>
+                    <div class="news-content">
+                        <h3>মোবাইল ব্যাংকিং জালিয়াতি সতর্কতা</h3>
+                        <p>নকল কল থেকে সাবধান থাকুন।</p>
+                        <div class="news-meta">
+                            <span class="date">২৩ আগস্ট, ২০২৫</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Stations -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>যোগাযোগ ও থানা তালিকা</h2>
+                <p>আপনার এলাকার থানার সাথে যোগাযোগ করুন</p>
+            </div>
+            <div class="contact-content">
+                <div class="station-finder">
+                    <h3>থানা খুঁজুন</h3>
+                    <div class="search-box">
+                        <input type="text" placeholder="এলাকার নাম লিখুন" id="stationSearch">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="station-list">
+                        <div class="station-item">
+                            <h4>ধানমন্ডি থানা</h4>
+                            <p><i class="fas fa-phone"></i> ০২-৯৬৬৬৭৭৭</p>
+                            <p><i class="fas fa-map-marker-alt"></i> ধানমন্ডি, ঢাকা</p>
+                        </div>
+                        <div class="station-item">
+                            <h4>গুলশান থানা</h4>
+                            <p><i class="fas fa-phone"></i> ০২-৯৮৮৮৯৯৯</p>
+                            <p><i class="fas fa-map-marker-alt"></i> গুলশান, ঢাকা</p>
+                        </div>
+                        <div class="station-item">
+                            <h4>উত্তরা থানা</h4>
+                            <p><i class="fas fa-phone"></i> ০২-৮৯৫৫৪৪৪</p>
+                            <p><i class="fas fa-map-marker-alt"></i> উত্তরা, ঢাকা</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="emergency-contacts">
+                    <h3>জরুরি যোগাযোগ</h3>
+                    <div class="emergency-grid">
+                        <div class="emergency-item">
+                            <div class="emergency-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="emergency-info">
+                                <h4>জরুরি সেবা</h4>
+                                <p>৯৯৯</p>
+                            </div>
+                        </div>
+                        
+                        <div class="emergency-item">
+                            <div class="emergency-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="emergency-info">
+                                <h4>পুলিশ হেল্পলাইন</h4>
+                                <p>১০০</p>
+                            </div>
+                        </div>
+                        
+                        <div class="emergency-item">
+                            <div class="emergency-icon">
+                                <i class="fas fa-car-crash"></i>
+                            </div>
+                            <div class="emergency-info">
+                                <h4>ট্রাফিক পুলিশ</h4>
+                                <p>০২-৯৫৫৫৫৫৫</p>
+                            </div>
+                        </div>
+                        
+                        <div class="emergency-item">
+                            <div class="emergency-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="emergency-info">
+                                <h4>সাইবার ক্রাইম</h4>
+                                <p>০২-৯৬৬৬৬৬৬</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>বাংলাদেশ পুলিশ</h3>
+                    <p>জনগণের নিরাপত্তা ও শান্তি রক্ষায় আমরা প্রতিশ্রুতিবদ্ধ। আমাদের লক্ষ্য একটি নিরাপদ ও শান্তিপূর্ণ বাংলাদেশ গড়া।</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>দ্রুত লিংক</h4>
+                    <ul>
+                        <li><a href="#">অনলাইন FIR</a></li>
+                        <li><a href="#">পুলিশ ক্লিয়ারেন্স</a></li>
+                        <li><a href="#">হারানো জিনিস</a></li>
+                        <li><a href="#">ট্রাফিক সেবা</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>বিভাগসমূহ</h4>
+                    <ul>
+                        <li><a href="#">ক্রিমিনাল ইনভেস্টিগেশন</a></li>
+                        <li><a href="#">ট্রাফিক পুলিশ</a></li>
+                        <li><a href="#">সাইবার ক্রাইম</a></li>
+                        <li><a href="#">স্পেশাল ব্রাঞ্চ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>যোগাযোগ</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> পুলিশ হেডকোয়ার্টার, ঢাকা</p>
+                        <p><i class="fas fa-phone"></i> +৮৮০-২-৯৫৫৫৫৫৫</p>
+                        <p><i class="fas fa-envelope"></i> info@police.gov.bd</p>
+                        <p><i class="fas fa-globe"></i> www.police.gov.bd</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">গোপনীয়তা নীতি</a>
+                    <a href="#">ব্যবহারের শর্তাবলী</a>
+                    <a href="#">সাইট ম্যাপ</a>
+                    <a href="#">সহায়তা</a>
+                </div>
+                <p>&copy; ২০২৫ বাংলাদেশ পুলিশ। সকল অধিকার সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
